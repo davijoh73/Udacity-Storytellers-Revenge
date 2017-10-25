@@ -4270,7 +4270,7 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: http://www.skywarp.co/Waterfall_Adventure.mp4
+  m_Url: http://www.skywarp.co/Waterfall_Entire_LowBitrate.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
