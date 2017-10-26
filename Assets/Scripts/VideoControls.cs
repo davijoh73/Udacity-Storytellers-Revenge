@@ -36,20 +36,21 @@ public class VideoControls : MonoBehaviour
             {
                 videoPlayer.Pause();
                 pauseSplash.SetActive(true);
+                audioSource.Pause();
             }
 
             else
             { 
                 videoPlayer.Play();
                 pauseSplash.SetActive(false);
-                //audioSource.Play();
+                audioSource.Play();
 
             }
         }
 
-        Debug.Log("video player time: " + videoPlayer.time);
+        //Debug.Log("video player time: " + videoPlayer.time);
 
-        if (videoPlayer.time >= 97.00)
+        if (videoPlayer.time >= 97.17)
         {
             videoPlayer.Pause();
             choiceSplash.SetActive(true);
@@ -57,17 +58,4 @@ public class VideoControls : MonoBehaviour
 
     }
 
-    public void goToBeach()
-    {
-        videoPlayer.time = 116.03;
-        choiceSplash.SetActive(false);
-        videoPlayer.Play();
-    }
-
-    public void goToUnderFalls()
-    {
-        videoPlayer.time = 97.19;
-        choiceSplash.SetActive(false);
-        videoPlayer.Play();
-    }
 }
