@@ -200,6 +200,7 @@
     <Compile Include="Assets\Scripts\BeachVideoControls.cs" />
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\EndGame.cs" />
+    <Compile Include="Assets\Scripts\UnderVideoControls.cs" />
     <Compile Include="Assets\Scripts\VideoControls.cs" />
   </ItemGroup>
   <ItemGroup>

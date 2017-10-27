@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/WaterfallAdventure.unity
+- path: Assets/TheBeach.unity
   isLoaded: 1
   isActive: 1

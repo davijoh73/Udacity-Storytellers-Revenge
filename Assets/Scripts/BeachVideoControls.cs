@@ -30,7 +30,7 @@ public class BeachVideoControls : MonoBehaviour
     void Update()
     {
         //Play or pause the video from user input
-        if (Input.GetKeyDown("space") || Input.GetMouseButtonDown(0) && (videoPlayer.time <= 88.10 || videoPlayer.time >= 90.10))
+        if (Input.GetKeyDown("space") || Input.GetMouseButtonDown(0) && (videoPlayer.time <= 87.00 || videoPlayer.time >= 89.00))
         {
             if (videoPlayer.isPlaying)
             {
@@ -47,9 +47,9 @@ public class BeachVideoControls : MonoBehaviour
             }
         }
 
-        //Debug.Log("video player time: " + videoPlayer.time);
+        Debug.Log("video player time: " + videoPlayer.time);
 
-        if (videoPlayer.time >= 89.10)
+        if (videoPlayer.time >= 88.00)
         {
             videoPlayer.Pause();
             audioSource.Pause();

@@ -137,7 +137,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dfb52d31abcc95847b2cbe384bd9c822, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Under the Waterfall!
+  m_Text: Back to the Waterfall!
 --- !u!222 &530754232
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -594,6 +594,7 @@ GameObject:
   - component: {fileID: 728425442}
   - component: {fileID: 728425441}
   - component: {fileID: 728425440}
+  - component: {fileID: 728425443}
   m_Layer: 2
   m_Name: Button
   m_TagString: Untagged
@@ -640,7 +641,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.6985294, g: 0.6985294, b: 0.6985294, a: 0.69803923}
-    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 0.69803923}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.69803923}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -659,15 +660,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: goToUnderFalls
-        m_Mode: 1
+      - m_Target: {fileID: 728425443}
+        m_MethodName: changeScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: WaterfallAdventure
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -705,6 +706,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 728425438}
+--- !u!114 &728425443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 728425438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2173ff534bc4b5e4dae6be1f9a010fd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1021566797
 GameObject:
   m_ObjectHideFlags: 0
@@ -4519,7 +4531,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1831407079}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2101bdd1da51c4340bf06f3444b52bfb, type: 3}
+  m_Script: {fileID: 11500000, guid: 612098dd000250f479ff6b627a49f014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pauseSplash: {fileID: 1937274027}
@@ -4677,7 +4689,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.6985294, g: 0.6985294, b: 0.6985294, a: 0.69803923}
-    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 0.69803923}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.69803923}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -4697,14 +4709,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2068260553}
-        m_MethodName: changeVideo
+        m_MethodName: changeScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Beach
+          m_StringArgument: TheBeach
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,

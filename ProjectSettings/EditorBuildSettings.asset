@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/WaterfallAdventure.unity
     guid: c21813060f47fb5409e50710a90b58eb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Beach.unity
     guid: 44db4086b864d22488d0c2d93b604795
   - enabled: 1
     path: Assets/UnderWaterfall.unity
     guid: a4a982a1d19475b4d949c50989b7d7fa
+  - enabled: 1
+    path: Assets/TheBeach.unity
+    guid: c323c374c675a4247b144b6c9d77252a
