@@ -30,29 +30,29 @@ public class VideoControls : MonoBehaviour
     void Update()
     {
         //Play or pause the video from user input
-        if (Input.GetKeyDown("space") || Input.GetMouseButtonDown(0) && (videoPlayer.time <= 96.00 || videoPlayer.time >= 98.00))
+        if (Input.GetKeyDown("space") || Input.GetMouseButtonDown(0) && (videoPlayer.time <= 96.20 || videoPlayer.time >= 98.20))
         {
             if (videoPlayer.isPlaying)
             {
                 videoPlayer.Pause();
-                pauseSplash.SetActive(true);
                 audioSource.Pause();
+                pauseSplash.SetActive(true);
             }
 
             else
             { 
                 videoPlayer.Play();
-                pauseSplash.SetActive(false);
                 audioSource.Play();
-
+                pauseSplash.SetActive(false);
             }
         }
 
         //Debug.Log("video player time: " + videoPlayer.time);
 
-        if (videoPlayer.time >= 97.17)
+        if (videoPlayer.time >= 97.20)
         {
             videoPlayer.Pause();
+            audioSource.Pause();
             choiceSplash.SetActive(true);
         }
 
