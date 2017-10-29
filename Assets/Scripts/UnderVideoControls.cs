@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UnderVideoControls : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class UnderVideoControls : MonoBehaviour
     private UnityEngine.Video.VideoPlayer videoPlayer;
     public GameObject pauseSplash; //splash screen that displays "Paused" text on screen
     public GameObject choiceSplash; //splash screen that displays choice of beach or under the falls
-    
+    private float count = 2f;
 
     [SerializeField]
     private AudioSource audioSource;
@@ -45,6 +46,22 @@ public class UnderVideoControls : MonoBehaviour
                 audioSource.Play();
                 pauseSplash.SetActive(false);
             }
+        }
+
+        else if (Input.GetMouseButton(0))
+        {
+            count -= Time.deltaTime;
+            if (count < 0)
+            {
+                SceneManager.LoadScene("WaterfallAdventure");
+                count = 2f;
+            }
+
+        }
+
+        else if (Input.GetMouseButtonUp(0))
+        {
+            count = 2f;
         }
 
         //Debug.Log("video player time: " + videoPlayer.time);

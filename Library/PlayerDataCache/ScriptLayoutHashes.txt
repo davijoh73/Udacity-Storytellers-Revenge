@@ -184,6 +184,7 @@ f12b46990184302ae413ff95cea31566 Assembly-CSharp.dll:.FadeScrollEffect
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TileScrollEffect
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.VideoControlsManager
 873bdd597bbca93eeb86bbec65ad3cd1 Assembly-CSharp.dll:.GvrPointerGraphicRaycaster
+80cb76a9c670a41d3751635639d1598d Assembly-CSharp.dll:.UnderVideoControls
 5d708ead9a8a3f8af542fec349ed718c Assembly-CSharp.dll:Gvr.Internal.EmulatorConfig
 a8b185f93b85036e13e3f553c802615a Assembly-CSharp.dll:.GvrTooltip
 764d2ecb131d46720e1b8d63b8f7c2ba Assembly-CSharp.dll:.KeyboardDelegateExample
@@ -198,4 +199,3 @@ c5839a4d51b9b5220e5cc04a930d6b3f Assembly-CSharp.dll:.UIFadeTransition
 e399fc54e753911801f12ac57c8fc414 Assembly-CSharp.dll:.GVRDemoManager
 f1dced04f168103741226c31e59bf1c5 Assembly-CSharp.dll:.Tab
 d885ad79a6ef5bfe2ce10637aac0b8a0 Assembly-CSharp.dll:GVRSample.AutoPlayVideo
-80cb76a9c670a41d3751635639d1598d Assembly-CSharp.dll:.UnderVideoControls
